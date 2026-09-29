@@ -1,16 +1,66 @@
-# React + Vite
+# 🛒 Vitrine Alegre
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação e-commerce responsiva desenvolvida em React, com catálogo de produtos, navegação para detalhes do produto, gerenciamento de carrinho e simulação de finalização de compra.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📋 Pré-requisitos
 
-## React Compiler
+Antes de iniciar, certifique-se de ter instalado em sua máquina:
+* [Node.js](https://nodejs.org/) (versão 18 ou superior)
+* [Git](https://git-scm.com/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Passo a Passo: Rodando o Projeto do Zero
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clonar o Repositório
+Abra o seu terminal (Terminal, PowerShell ou Git Bash) e execute:
+```bash
+git clone https://github.com/Brunin848/vitrine-alegre.git
+```
+
+### 2. Acessar a Pasta do Projeto
+```bash
+cd vitrine-alegre
+```
+
+### 3. Instalar as Dependências
+Execute o comando abaixo para baixar todas as bibliotecas necessárias do projeto:
+```bash
+npm install
+```
+
+### 4. Executar o Servidor de Desenvolvimento
+Inicie a aplicação localmente:
+```bash
+npm run dev
+```
+*(Se o projeto utilizar Create React App, utilize `npm start`).*
+
+### 5. Acessar no Navegador
+Abra o seu navegador e acesse a URL exibida no terminal (geralmente `http://localhost:5173` ou `http://localhost:3000`).
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* **React**: Biblioteca principal para interface do usuário.
+* **React Router DOM**: Gerenciamento de rotas e navegação client-side (`/`, `/produto/:id`, `/carrinho`).
+* **Context API**: Gerenciamento global de estado do carrinho de compras.
+* **Vite**: Build tool e servidor de desenvolvimento.
+* **Vercel**: Plataforma de hospedagem e deployment contínuo.
+
+---
+
+## ⚙️ Configuração para Deployment (Vercel)
+
+Para evitar erros de página não encontrada (404) ao recarregar a tela em rotas como `/produto/:id`, o projeto conta com um arquivo `vercel.json` na raiz:
+
+```json
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
+```
