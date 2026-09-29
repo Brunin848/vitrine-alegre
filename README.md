@@ -1,6 +1,6 @@
 Links: 
 Github -> https://github.com/Brunin848/vitrine-alegre
-Vercel -> https://vercel.com/tads3/vitrine-alegre
+Vercel -> https://vitrine-alegre-psi.vercel.app/
 
 # 🛒 Vitrine Alegre
 
