@@ -1,3 +1,7 @@
+Links: 
+Github -> https://github.com/Brunin848/vitrine-alegre
+Vercel -> https://vercel.com/tads3/vitrine-alegre
+
 # 🛒 Vitrine Alegre
 
 Uma aplicação e-commerce responsiva desenvolvida em React, com catálogo de produtos, navegação para detalhes do produto, gerenciamento de carrinho e simulação de finalização de compra.
